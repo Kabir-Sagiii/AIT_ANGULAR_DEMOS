@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS Button</title>
+    <script>
+      function createButton() {
+        var btnRef = document.createElement("button");
+
+        btnRef.innerText = "Javascript Button";
+
+        document.querySelector("body").appendChild(btnRef);
+      }
+    </script>
+  </head>
+  <body onload="createButton()"></body>
+</html>

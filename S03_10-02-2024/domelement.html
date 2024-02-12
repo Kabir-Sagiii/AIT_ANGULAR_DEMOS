@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function domelement() {
+        var h1 = document.createElement("h1"); // h1 is created
+        h1.innerText = "I am Heading Element created by JS";
+
+        document.querySelector("body").appendChild(h1);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Add new Element in the DOM</h2>
+    <button onclick="domelement()">Add New element</button>
+  </body>
+</html>

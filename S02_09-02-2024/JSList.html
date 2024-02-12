@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>List in Javascript Document</title>
+    <script>
+      function createList() {
+        var ol = document.createElement("ol"); // <ol>  </ol>
+        var li1 = document.createElement("li"); //<li> </li>
+        var li2 = document.createElement("li"); //<li> </li>
+        var li3 = document.createElement("li"); //<li> </li>
+        var li4 = document.createElement("li"); //<li> </li>
+
+        li1.innerText = "Apple"; //<li>Apple</li>
+        li2.innerText = "Samsung";
+        li3.innerText = "Oppo";
+        li4.innerText = "Vivo";
+
+        ol.appendChild(li1); // <ol><li>Apple</li></ol
+        ol.appendChild(li2); // <ol><li>Apple</li> <li>Samsung</li></ol
+        ol.appendChild(li3);
+        ol.appendChild(li4);
+
+        document.querySelector("body").appendChild(ol);
+      }
+
+      function multiList() {
+        createList();
+        createList();
+        createList();
+        createList();
+      }
+    </script>
+  </head>
+  <body onload="multiList()">
+    <h2>Javascript</h2>
+  </body>
+</html>
